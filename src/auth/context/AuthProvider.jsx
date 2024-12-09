@@ -1,7 +1,7 @@
 import { useReducer } from "react"
 import { types } from "../types/types";
 import { AuthContext } from "./AuthContext"
-import { authReducder } from "./authReducer";
+import { authReducer } from "./authReducer";
 
 /* const initialState={
     logged:false,
@@ -19,7 +19,7 @@ const init=()=>{
 //this functional component provide every information
 export const AuthProvider = ({children}) => {
     //hay que establecer si un usuario esta logeado
-     const [authState,dispatch]  = useReducer(authReducder,{},init);
+     const [authState,dispatch]  = useReducer(authReducer,{},init);
      
 
      const login= (name='')=>{
