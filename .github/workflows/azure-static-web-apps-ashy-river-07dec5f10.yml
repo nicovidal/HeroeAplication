@@ -48,7 +48,7 @@ jobs:
           
       - name: Verificar imágenes
         run: |
-          ls dist/assets
+          ls dist/heroes
 
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
